@@ -26,7 +26,7 @@ DEBUG = int(os.getenv('DEBUG'))
 
 ALLOWED_HOSTS = []
 ALLOWED_HOSTS.extend(filter(None,os.environ.get('ALLOWED_HOSTS','').split(','),))
-CSRF_TRUSTED_ORIGINS = ['16.16.193.107','ec2-16-16-193-107.eu-north-1.compute.amazonaws.com']
+CSRF_TRUSTED_ORIGINS = ['http://16.16.193.107','http://ec2-16-16-193-107.eu-north-1.compute.amazonaws.com']
 
 # Application definition
 
